@@ -1,0 +1,653 @@
+/* Netflix website */
+/* CSS FILE */
+
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Inclusive+Sans&family=Luckiest+Guy&family=Martel+Sans:wght@800;900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body{
+    background-color: black;
+    height: 100%;
+    width :100%;
+    overflow-x: hidden;
+}
+
+/* this div is main container of the data it containes all code within */
+.main{
+    background-image: url(/Asset/img/bg_img.jpg);
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.main .box{
+    box-shadow: inset 0px 65px 130px 150px rgb(0, 0, 0) ;
+    /* box-shadow: inset 0px -40px 10px 10px rgb(255, 254, 254) ; */
+    height: 90vh;
+    width: 100%;
+    opacity: 0.8;
+    background-color: rgba(43, 39, 39, 0.616);
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    max-width: 75%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 160px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+
+/* hero section of the website */
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: bolder;
+    color: white;
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 11;
+    row-gap: 10px;
+    padding: 0 0px;
+}
+.hero> :first-child{
+    font-size: 48px;
+    font-weight: 900;
+    
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+/* This can seprate div <container.> */
+.sepration{
+    position: relative;
+    z-index: 20;
+    height: 7px ;
+    background-color: rgb(47, 45, 45);
+}
+
+
+/*  all buttons  */
+.btn{
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-weight: 700;
+    background-color:rgba(67, 61, 61, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.569);
+    border-radius: 4px;
+    padding: 7px 24px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+/* sign in button */
+.btn-red-sn{
+    font-weight: 800;
+    padding: 8px 25px 8px 25px ;
+    border: none;
+    margin: 13px;
+    background-color: rgb(191, 12, 12);
+    color: white;
+}
+
+/* all red button */
+.btn-red{
+    border: none;
+    font-size: 25px;
+    font-weight: 100;
+    background-color: rgb(191, 12, 12);
+    color: white;
+    padding: 14px 25px 14px 15px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    
+}
+
+
+/* input field for email address  */
+/* design input fields  */
+.inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    column-gap: 5px;
+}
+.main input{
+    border:0.50px solid rgb(145, 145, 141) ;
+    background-color: rgba(27, 27, 27, 0.606);
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.888);
+    padding: 18px 154px 18px 18px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* container  */
+/* design whole container with flex.. */
+.first{
+    display: flex;
+    max-width: 80vw;
+    height: 70vh;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+}
+/* design text within container */
+.para1{
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.para2{
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+/* orgnising img and vid within container */
+/* All video cn handle with .secImg */
+.secImg{
+    
+    position: relative;
+    top: 0;
+    width: 800px; 
+}
+.secImg img{
+    width:500px ;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    width: 380px;
+    position: absolute;
+    top: 78px;
+    right: 100px;
+    left: 58px;
+}
+
+
+/* second div */
+.second .para>.para1{
+line-height: 50px;
+margin-bottom: 10px;
+}
+
+
+/* third div  */
+.third .secImg{
+    width: 700px;
+}
+
+.third .para>.para1{
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+
+.third .secImg video{
+    position: absolute;
+    width: 320px;
+    top: 42px;
+    left: 90px;
+    right: 115px;
+}
+
+/* .fourth div */
+.fourth .para>.para1{
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* FAQ section  */
+/*  */
+.faqsection{
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+}
+
+/* FAQ section heading */
+.faqsection h2{
+    font-family: 'martel sans';
+    font-size: 48px;
+    margin: 10px;
+}
+/* FAQ section bottom heading */
+.faqsection .ready{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 20px ;
+}
+
+/* FAQ BOXES */
+.faqbox{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap: 1px;
+    height: 10vh;
+    width: 80vw;
+    font-size: 20px;
+    background-color: rgba(222, 213, 213, 0.199);
+    cursor: pointer;
+    margin-bottom:5px ;
+}
+
+/* hover properties  */
+.faqbox:hover{
+    transition: all 0.3s ease-out;
+    transform: scale(1.01);
+}
+
+/* footeeeeeeR */
+/* footer part */
+.foot{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+/* not appliacabel right now */
+.foot button{
+    left: 120px;
+    width: 10vw;
+}
+.foot {
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.footdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 25px;
+    gap: 15px;
+}
+.footdiv a,p{
+    color: rgba(255, 255, 255, 0.629);
+}
+
+
+/* media query for below 1200px screens and more.. */
+/*  */
+@media  screen and (max-width : 1200px) {
+
+    /* targets navbar */
+    nav{
+        max-width: 90%;
+    }
+    nav img{
+        width: 100px;
+        
+    }
+
+    /* targets all hero sectoin */
+    .hero> :first-child{
+        font-size: 35px;
+        text-align: center;
+    }
+    .hero> :nth-child(2){
+        font-size: 20px;
+        text-align: center;
+    }
+    .hero> :nth-child(3){
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    /* target red sign in button  */
+    .btn-red-sn{
+        padding: 8px 25px 8px 25px ;
+    }
+
+    /* TARGET input fields  */
+    .inp{
+        row-gap: -10px;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    /* targe all red buttons but main (GET STARTED ) */
+    .btn-red{
+        font-size: 20px;
+        padding: 14px 25px 14px 15px;
+        margin-top: -17px;
+        
+    }
+
+    /* tagets para by main classes */
+    .first{
+        max-width: 85vw;
+        
+    }
+    .para1{
+        font-size: 38px;
+    }
+    
+    /* targets FAQ */
+    .faqsection h2{
+        font-size: 30px;  
+    }
+    .faqbox{
+        height: 7vh;
+        width: 90vw;
+        font-size: 22px;
+        padding: 12px;
+    }
+}
+
+/* media query for tablets  */
+/* below 950px width screen */
+@media  screen and (max-width : 950px){
+
+
+    /* targets hero section of the program */
+    .hero> :first-child{
+        font-size: 35px;
+        text-align: center;
+        max-width: 90vw;
+    }
+    .hero> :nth-child(2){
+        font-size: 20px;
+        text-align: center;
+        max-width: 85vw;
+    }
+    .hero> :nth-child(3){
+        font-size: 20px;
+        text-align: center;
+        max-width: 80vw;
+    }
+
+    /* targets al paragraphs in pages */
+    .first{
+        max-width: 80vw;
+        text-align: center;
+        height: 95vh;
+        flex-direction:column;
+        gap: 10px;
+    }
+    .para1{
+        font-size: 28px;
+        
+    }
+    .para2{
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .first .para{
+        position: relative;
+        top: 15px;
+        bottom: 10px ;
+        
+    }
+    .second .para{
+        position: relative;
+        top: -10px;
+        /* bottom: 100px; */
+    }
+    .third .para{
+        position: relative;
+        top: 10px;
+        /* bottom: 50px ; */
+    }
+    .fourth .para{
+        position: relative;
+        top: -10px;
+        bottom: 50px;
+    }
+
+    /* target all pages but mainly [first page] */
+    .secImg{
+        top: 0;
+        width: 800px; 
+        
+    }
+    .secImg img{
+        width:630px ;
+        flex-shrink: 2;
+    }
+    .secImg video{
+        width: 485px;
+        top: 82px;
+        left: 160px;
+        flex-shrink: 2;
+    }
+
+
+ /* target mainly third page */
+    .third .secImg img{
+        width:550px ;
+        flex-shrink: 2;
+    }
+    .third .secImg video{
+        width: 320px;
+        top: 42px;
+        left: 200px;
+    }
+
+
+    /* FAq section for tablets  */
+    .faqsection h2{
+        font-size: 25px;  
+    }
+    .faqbox{
+        font-size: 16px;
+    }
+    .faqsection .ready{
+        font-size: 14px;
+        max-width: 80vw;
+    }
+
+    /* footer section for tablets */
+    .foot{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    .footdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 25px;
+        gap: 15px;
+    }
+
+
+
+/* Media query for smartphones */
+/* below 500px width  */
+
+@media  screen and (max-width : 500px)
+{
+    nav{
+        max-width: 90%;
+    }
+    nav img{
+        width: 85px;
+        
+    }
+    #btn-btn{
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 6px 13px 6px 13px ;
+        margin-right: -10px;
+    }
+    #btn-red-sn{
+        margin-right: -5px;
+        font-size: 10px;
+        padding: 7px 13px 7px 13px ;
+    }
+    .hero> :first-child{
+        font-size: 30px;
+        max-width:90vw ;
+
+    }
+    .hero> :nth-child(2){
+        font-size: 17px;
+        max-width:85vw ;
+    }
+    .hero> :nth-child(3){
+        font-size: 12px;
+        max-width:80vw ;
+
+    }
+    .inp input{
+        max-width: 80vw;
+        font-size: 14px;
+    }
+    .first{
+        max-width: 80vw;
+        text-align: center;
+        height: 70vh;
+        flex-direction:column;
+        gap: 10px;
+    }
+    
+    /* all paragraph related work in pages section */
+    .para .para1{
+        font-size: 25px;
+    }
+    .para .para2{
+        font-size: 15px;
+    }
+    .first .para{
+        position: relative;
+        top: 1px;
+        
+    }
+    .second .para{
+        position: relative;
+        top: 2px;
+        
+    }
+    .third .para{
+        position: relative;
+        top: 10px;
+
+    }
+    .fourth .para{
+        position: relative;
+        top: -10px;
+        bottom: 50px;
+    }
+
+    /* Images and video in in pages */
+
+    /* taget all and [mainly first page] */
+    .secImg{
+        top: 0;
+        max-width: 80vw; 
+        
+    }
+    .secImg img{                 
+        max-width:80vw ;
+    }
+    .secImg video{
+        max-width: 60vw;
+        top: 5vh;
+        left: 10vw;
+        overflow: hidden;
+        object-fit: contain;
+        object-position: top;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+
+        /* target mainly third page */
+    .third .secImg img{
+        max-width:80vw ;
+        flex-shrink: 2;
+    }
+    .third .secImg video{
+        max-width: 48vw;
+        top: 3vh;
+        left: 16vw;
+        overflow: hidden;
+        object-fit: contain;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        
+    }
+    
+    /* FAq section for potrait in mainly for 
+    mobile screens */
+
+    .faqsection h2{
+        font-size: 20px;  
+    }
+    .faqbox{
+        font-size: 12px;
+    }
+    .faqsection .ready{
+        font-size: 12px;
+    }
+
+    /* footer section in potrait */
+    .foot{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    .footdiv{
+        font-size:10px;
+        margin: 25px;
+        gap: 10px;
+    }
+
+}}
